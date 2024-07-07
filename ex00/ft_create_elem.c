@@ -2,9 +2,9 @@
 
 t_list *ft_create_elem(void *data)
 {
-	t_list *list;
+	t_list *new;
 
-	list->data = data;
-	list->next = 0;
-	return (list);
+	new->data = data;
+	new->next = 0;
+	return (new);
 }
