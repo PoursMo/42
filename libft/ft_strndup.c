@@ -4,12 +4,17 @@ char	*ft_strndup(char *str, int n)
 {
 	char	*dup;
 	int		i;
+	int		size;
 
-	dup = malloc(sizeof(char) * (ft_strlen(str) + 1));
+	if (n > ft_strlen(str))
+		size = ft_strlen(str);
+	else
+		size = n;
+	dup = malloc(sizeof(char) * (size + 1));
 	if (!dup)
 		return (NULL);
 	i = 0;
-	while (str[i])
+	while (str[i] && i < n)
 	{
 		dup[i] = str[i];
 		i++;

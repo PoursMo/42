@@ -2,13 +2,13 @@
 
 char	*ft_strchr(char *s, int c)
 {
-	while(*s)
+	while (*s)
 	{
-		if(*s == c)
+		if (*s == c)
 			return (s);
 		s++;
 	}
-	if(*s == c)
+	if (*s == c)
 		return (s);
 	return (NULL);
 }

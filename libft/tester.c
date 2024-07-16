@@ -4,5 +4,8 @@
 
 int main()
 {
-    printf("%c\n", ft_toupper('f'));
+	char t[100] = "caca ";
+	char *t2 = "pipi popo pipu";
+    printf("%s\n", ft_strcat(t, t2));
+    printf("%s\n", strcat(t, t2));
 }

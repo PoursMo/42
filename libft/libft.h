@@ -22,9 +22,13 @@ void	ft_putstr(char *str);
 void	ft_putchar(char c);
 void	ft_putnbr(int nbr);
 int		ft_strcmp(char *s1, char *s2);
+char	*ft_strcpy(char *dst, char *src);
+char	*ft_strcat(char *dst, char *src);
 char	*ft_strdup(char *str);
+char	*ft_strndup(char *str, int n);
 char	*ft_strchr(char *s, int c);
 char	*ft_strrchr(char *s, int c);
 char	*ft_strstr(char *haystack, char *needle);
+char	**ft_split(char *str, char *charset);
 
 #endif
